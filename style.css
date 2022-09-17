@@ -1,3 +1,5 @@
+/* color palette gray from https://tailwindcss.com/docs/customizing-colors */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +13,24 @@ body {
 }
 
 .sidebar {
-  background: green;
   grid-area: 1 / 1 / 3;
+  background: #374151;
+  color: #f3f4f6;
 }
 
 .header {
-  background: #000;
+  background: #f3f4f6;
 }
 
 .mainContent {
-  background: red;
+  background: #d1d5db;
+}
+
+nav {
+  display: grid;
+}
+
+nav a {
+  color: #f3f4f6;
+  text-decoration: none;
 }
