@@ -26,11 +26,24 @@ body {
   background: #d1d5db;
 }
 
+h1  {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   display: grid;
 }
 
 nav a {
+  font-size: 1.2rem;
   color: #f3f4f6;
   text-decoration: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  margin-right: 10px;
 }
