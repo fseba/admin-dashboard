@@ -130,8 +130,9 @@ input[type='search'] {
 .buttons {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-evenly;
+  grid-template-columns: 1fr 100px 1fr;
   align-items: center;
+  gap: 30px;
 }
 
 .buttons > button {
@@ -145,6 +146,10 @@ input[type='search'] {
   width: 100px;
 }
 
+button:first-child {
+  justify-self: end;
+;
+}
 /* MAIN CONTENT */
 
 .mainContent {
