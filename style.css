@@ -11,7 +11,7 @@ body {
   font-weight: 600;
   
   display: grid;
-  grid: 180px 1fr / 13.5rem 1fr;
+  grid: 180px minmax(600px, 1fr) / 13.5rem 1fr;
   gap: 5px;
 }
 
@@ -19,7 +19,7 @@ body {
 
 .sidebar {
   grid-area: 1 / 1 / 3;
-
+  
   background: #4b5563;
   border-radius: 0 10px 10px 0;
   color: #f3f4f6;
@@ -148,12 +148,28 @@ input[type='search'] {
 
 button:first-child {
   justify-self: end;
-;
 }
+
+.buttons > button:active,
+nav a:active {
+  scale: 0.98;
+}
+
 /* MAIN CONTENT */
 
 .mainContent {
   background: #d1d5db;
   border-radius: 10px 10px 0 10px;
+
+  display: grid;
+  grid: 1fr  1fr / 3fr  1fr;
+}
+
+.mainContent-projectCards {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.mainContent-announcementContainer {
+  
 }
 
