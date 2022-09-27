@@ -15,6 +15,10 @@ body {
   gap: 5px;
 }
 
+p {
+  color: #4b5563;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -163,7 +167,7 @@ nav a:active {
   padding: 15px 15px 35px;
 
   display: grid;
-  grid: auto / 815px 380px;
+  grid: 20px 1fr 20px 1fr / 815px 380px;
   gap: 15px;
   justify-content: center;
 }
@@ -183,7 +187,7 @@ nav a:active {
   
   background: #f3f4f6;
   border-radius: 10px;
-  border-inline-start: 10px solid #9ca3af;
+  border-inline-start: 10px solid #4b5563;
   color: #000;
   font-size: 1.1rem;
   font-weight: 400;
@@ -270,10 +274,27 @@ h3 {
   grid-area: 3 / 2;
 }
 
-.trendingContainer-content img {
-  width: 60px;
+.content-trendingProjects {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  
+  display: grid;
+  grid: 1fr 1fr / 50px 1fr;
+  column-gap: 15px;
 }
 
-.content-trendingProjects {
-  margin-bottom: 10px;
+.content-trendingProjects img {
+  width: 50px;
+  grid-area: 1 / 1 / 3 ;
 }
+
+.content-trendingProjects .content-username {
+  align-self: end;
+}
+
+.content-trendingProjects .content-projekt {
+  font-weight: 400;
+  color: #4b5563;
+}
+
+
