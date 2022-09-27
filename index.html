@@ -9,6 +9,7 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
+
   <section class="sidebar">
     <h1>
       <svg style="width:48px;height:48px" viewBox="0 0 24 24">
@@ -74,6 +75,7 @@
       </a>
     </nav>
   </section>
+
   <header class="header">
     <div class="searchfield">
       <label for="search">
@@ -88,12 +90,12 @@
         <path fill="currentColor" d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" />
       </svg>
       <img class="userInfo-userImage" src="images/cat.svg" alt="user image">
-      <div class="userInfo-userName">Barnabas Marmalade</div>
+      <div class="userInfo-userName">Cat</div>
     </div>
     <div class="welcomeBox">
       <img class="welcomeBox-userImage" src="images/cat.svg" alt="user image">
       <div class="welcomeBox-greeting">Hi there,</div>
-      <div class="welcomeBox-userName">Barnabas Marmalade</div>
+      <div class="welcomeBox-userName">Cat</div>
     </div>
     <div class="buttons">
       <button>New</button>
@@ -101,9 +103,11 @@
       <button>Share</button>
     </div>
   </header>
+
   <main class="mainContent">
+
+    <h2 class="projectsHeadline">Your Projects</h2>
     <div class="mainContent-projectCardContainer">
-      <h2>Your Projects</h2>
       <div class="mainContent-projectCard">
         <h3>Test project</h3>
         <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
@@ -147,8 +151,9 @@
         </div>
       </div>
     </div>
+
+    <h2 class="announcementsHeadline">Announcements</h2>
     <div class="mainContent-announcementContainer">
-      <h2>Announcements</h2>
       <div class="announcementContainer-content">
        <div class="announcementContainer-announcements">
         <h3>Announcement 1</h3>
@@ -164,7 +169,17 @@
        </div>
       </div>
     </div>
-    <div class="mainContent-trendingContainer"></div>
+
+    <h2 class="trendingHeadline">Trending</h2>
+    <div class="mainContent-trendingContainer">
+      <div class="trendingContainer-content">
+        <div class="content-trendingProjects"><img src="images/chicken.svg" alt="chicken"><span>@chicken</span></div>
+        <div class="content-trendingProjects"><img src="images/dog.svg" alt="dog"><span>@dog</span></div>
+        <div class="content-trendingProjects"><img src="images/fox.svg" alt="fox"><span>@fox</span></div>
+        <div class="content-trendingProjects"><img src="images/panda.svg" alt="panda"><span>@panda</span></div>
+      </div>
+    </div>
+
   </main>
 </body>
 </html>
